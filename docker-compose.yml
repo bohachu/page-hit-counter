@@ -1,7 +1,8 @@
 redis:
     image: redis:3.0.5
 
-app:
+page_counter:
+    container_name: page_counter
     image: page-hit-counter
     links:
     - "redis:redis"
