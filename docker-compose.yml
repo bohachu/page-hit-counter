@@ -3,7 +3,7 @@ redis:
 
 page_counter:
     container_name: page_counter
-    image: page-hit-counter
+    image: asia.gcr.io/epa-cloud/epa_ckan_page_counter:latest
     links:
     - "redis:redis"
     ports:
